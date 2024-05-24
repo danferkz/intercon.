@@ -1,0 +1,125 @@
+/* // crear root */
+:root {
+    --primary: rgb(17 24 39 / 95%);
+    --text-nav: #fff;
+    --text-hover: rgb(59 130 246 / 95%);
+    --secondary: #6c757d;
+    --p-gray: rgb(156 163 175 / 95%);
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+}
+
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #f8f9fa;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+
+.content {
+    margin-top: 70px;
+    /* Altura del navbar */
+}
+
+/** NAVBAR */
+.navbar {
+    padding: 10px 80px !important;
+    background-color: var(--primary);
+}
+
+.navbar-nav li a {
+    color: var(--text-nav) !important;
+    font-weight: 500;
+}
+
+.navbar-nav li a:hover {
+    color: var(--text-hover) !important;
+}
+
+.navbar-nav {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-link {
+    color: #fff;
+    padding-right: 20px;
+}
+
+
+.navbar-brand img {
+    height: 40px;
+}
+
+.flag-icon {
+    height: 24px;
+}
+
+.form-switch .form-check-input {
+    width: 40px;
+    height: 20px;
+    margin-left: -40px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+
+/* SPONSORS */
+.bg-fixed-image {
+    background-image: url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-dark.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.section-wrap {
+    background-color: var(--primary);
+    z-index: -1;
+    text-align: center !important;
+}
+
+.next-fixed a {
+    border: 1px solid rgba(30 58 138, 0.5);
+    padding: 5px;
+    background-color: rgba(0, 123, 255, 0.1);
+    color: rgb(147 197 253) !important;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.next-fixed a span:first-child {
+    background-color: rgb(37 99 235 / 95%);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/* TABLE PRICES */
+.max-width-56{
+    max-width: 56%;
+}
+
+.text-375rem{
+    font-size: 2.75rem;
+    font-weight: 500;
+}
+
+.p-gray{
+    color: var(--p-gray);
+}
+
+.table>:not(caption)>*>*{
+    border-top-width: 0;
+    border-bottom-width: 0;
+}
