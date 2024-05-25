@@ -106,10 +106,6 @@ a {
 }
 
 /* TABLE PRICES */
-.max-width-56 {
-    max-width: 65%;
-}
-
 .text-375rem {
     font-size: 2.75rem;
     font-weight: 500;
@@ -127,6 +123,10 @@ a {
 .table>:not(caption)>*>* {
     border-top-width: 0;
     border-bottom-width: 0;
+}
+
+.max-width-56 {
+    max-width: 70%;
 }
 
 .tw-gradient-to {
@@ -154,9 +154,10 @@ a {
     background-clip: text;
     text-align: left;
     font-size: 18px;
-    font-weight:bolder;
+    font-weight: bolder;
     font-family: 'JetBrains Mono', monospace;
-    font-weight: 700;
+    font-weight: 68%;
+    padding: 5px 15px;
 }
 
 .categoria-white {
@@ -168,21 +169,111 @@ a {
     background-clip: text;
 }
 
-table tbody tr{
+table tbody tr a {
+    padding: 20px !important;
+}
+
+table tbody tr {
     /* // alinear verticalmente todo */
     vertical-align: middle;
 }
 
-table tbody tr a{
-    color: #fff!important;
-    font-weight: bold!important;
+table tbody tr a {
+    color: #fff !important;
+    font-weight: bold !important;
 }
 
-.price-text{
+.price-text {
     font-size: 34px;
     font-weight: bold;
     background: linear-gradient(to right, #059669, #38bdf8);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+}
+
+/*  FECHAS IMPORTANTES */
+#secion-fechas {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+#secion-fechas .container {
+    z-index: 100;
+}
+
+#secion-fechas .container .fechas p{
+    text-align: left;
+}
+
+.timeline-steps {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.timeline-steps .timeline-step {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 1rem;
+}
+
+@media (min-width: 768px) {
+    .timeline-steps .timeline-step:not(:last-child):after {
+        content: "";
+        display: block;
+        border-top: .25rem dotted #3b82f6;
+        width: 3.46rem;
+        position: absolute;
+        left: 7.5rem;
+        top: .3125rem;
+    }
+
+    .timeline-steps .timeline-step:not(:first-child):before {
+        content: "";
+        display: block;
+        border-top: .25rem dotted #3b82f6;
+        width: 3.8125rem;
+        position: absolute;
+        right: 7.5rem;
+        top: .3125rem;
+    }
+}
+
+.timeline-steps .timeline-content {
+    width: 10rem;
+    text-align: center;
+}
+
+.timeline-steps .timeline-content .inner-circle {
+    border-radius: 1.5rem;
+    height: 3rem;
+    width: 3rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    color: #fff; /* Ajuste el color del texto para que sea visible */
+    position: relative; /* Agregue posición relativa */
+    cursor: pointer;
+}
+
+.timeline-steps .timeline-content .inner-circle:hover {
+    background-color: var(--primary);
+    color: #fff;
+}
+
+
+
+.timeline-steps .timeline-content .inner-circle svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.timeline-steps .timeline-content .inner-circle svg:hover {
+    fill: #ffffff;
 }
